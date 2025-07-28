@@ -1,0 +1,16 @@
+<h1>Exo 2</h1>
+
+<p>{{seriesList}}</p>
+
+<h2>Liste des séries</h2>
+
+<ul *ngIf="seriesList.length > 0; else noSeries">
+  <li *ngFor="let serie of seriesList">
+    {{ serie }}
+    <button (click)="deleteSerie(serie)">Supprimer</button>
+  </li>
+</ul>
+
+<ng-template #noSeries>
+  <p>Aucune série à afficher.</p>
+</ng-template>
