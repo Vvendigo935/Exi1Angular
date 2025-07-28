@@ -1,0 +1,25 @@
+<h1>Exo 1</h1>
+
+<section>
+    <h2 class="red">on verra</h2>
+
+
+    <p>{{ isEven ? "impair" : "pair"}}</p>
+</section>
+
+<section>
+    <h2>_____</h2>
+
+
+
+    <p [class]="isEven ? 'red' : 'green'">{{counter}}</p>
+</section>
+
+<section>
+    <button (click)="toggleCounter()" >+1</button>
+    
+</section>
+<section>
+    <button (click)="toggleAntiCounter()" >-1</button>
+    
+</section>
